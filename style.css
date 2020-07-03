@@ -1,0 +1,189 @@
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #111;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+/* Saat lebar layar kurang dari 680 pixel, sembunyikan semua menu item kecuali item 
+yang pertama yaitu("Home"). Tampilkan juga list item yang berisi link untuk membuka 
+menu yaitu (li.icon) 
+*/
+@media screen and (max-width:680px) {
+ul.topnav li:not(:first-child) {display: none;}
+ul.topnav li.icon {
+  float: right;
+  display: inline-block;
+}
+}
+
+/* Class dengan nama "responsive" akan ditambahkan oleh JavaScript saat user mengklik icon. 
+ Munculnya Class ini akan mendisplay isi list menu
+*/
+@media screen and (max-width:680px) {
+ul.topnav.responsive {position: relative;}
+ul.topnav.responsive li.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+ul.topnav.responsive li {
+  float: none;
+  display: inline;
+}
+ul.topnav.responsive li a {
+  display: block;
+  text-align: left;
+}
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+
+.tengah {
+  text-align: center;
+}
+
+.aside-1 {
+  width: 300px;
+}
+
+.aside-2 {
+  width: 300px;
+}
+
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1 auto;
+    display: inline-block;
+  }
+}
+@media all and (min-width: 800px) {
+  .tengah {
+    flex: 3 0px;
+  }
+
+  .aside-1 {
+    order: 1;
+  }
+
+  .tengah {
+    order: 2;
+  }
+
+  .aside-2 {
+    order: 3;
+  }
+}
+
+
+.jumbotron {
+  width:100%;
+  height: 400px;
+  text-align: center;
+  color: #fff;
+  background-color:#aaa;
+}
+
+body {
+  font-family: "Lora";
+}
+
+p {
+  color: black;
+}
+
+#profpic {
+  margin-top: 40px;
+  height: 200px;
+  border: 5px solid #666;
+  border-radius:50%;
+}
+
+.main {
+  text-align: left;
+  
+}
+
+.main h2 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+}
+
+#sosmed {
+  text-align:center;
+  display: inline-block;
+  margin:10px;
+}
+
+#arkademy {
+  width: 200px;
+}
+
+a{
+  transition: 300ms;
+}
+
+a:hover {
+  transform: translateY(-5px);
+}
+
+.footer h4 {
+  padding-top: 40px;
+}
+
+.jumbotron p {
+  color: #fff;
+}
+
+input, textarea {
+  width: 300px;
+}
+
+textarea {
+  height: 80px;
+}
+
+#kirim {
+  width: 200px;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 5%;
+}

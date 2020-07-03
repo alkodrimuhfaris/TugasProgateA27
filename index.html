@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+    <title>M Faris Alkodri</title>
+  </head>
+  <body>
+    <!--javascript-->
+    <script src="script.js" crossorigin="anonymous"></script>
+
+    <!--internal css styling-->
+    <style type="text/css">
+      p {color:black;}
+    </style>
+    <!--batas internal css styling-->
+
+    <header>
+      <ul class="topnav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#main">Tentang Saya</a></li>
+        <li><a href="#contact">Alamat</a></li>
+        <li><a href="#about">Sosial Media</a></li>
+        <li class="icon">
+          <a href="javascript:void(0);" onclick="myFunction()"><span class="fa fa-bars"></span></a>
+        </li>
+      </ul>
+    </header>
+
+    <!--awal class header-->
+    <div class="main">
+      <div class="jumbotron">
+        <img id="profpic" src="img/foto_informal.jpg" class="rounded-circle mx-auto d-block">
+        <h1 align="center"> M Faris Alkodri </h1>
+        <h3 align="center" ><em>Cook-helper</em></h3>
+      </div>
+    </div>
+    <!--akhir class header-->
+    
+    <!-- Awal class main-->    
+    <div class="main">
+      <!--Teks tentang saya-->
+      <h2>Tentang Saya</h2>
+      
+
+      <!--garis di bawah "Tentang saya"-->
+      <hr width="300px" align="center" >
+      
+      <!--Alasan menjadi programmer-->
+      <p>Alasan saya ingin menjadi programmer selain karena dapat bekerja <em>remote</em> dan juga jenjang karir yang lebih menjanjikan di masa depan, saya ingin bisa <strong>membuat aplikasi serta web yang berguna untuk UMKM</strong> semisal aplikasi POS dan juga aplikasi absensi yang mampu memberikan <em>benefit</em> bagi UMKM serta saya sendiri, hal ini dikarenakan tempat di mana saya bekerja <em>part-time</em> dulu adalah UMKM dan untuk bisa <em>survive</em> di era saat ini, digitalisasi UMKM adalah hal yang penting untuk dilakukan.</p>
+
+      <!--Alamat-->
+      <p>Alamat: Jalan Pandega Marta, No. <strong> 107</strong>, Mlati, Sleman, D.I. Yogyakarta</p>
+
+      <!--Sekolah, hobi, dan media sosial dijadikan satu grid via bootstrap-->
+      <div class="container text-center">
+
+        <!--penentuan row pada sekolah, hobi dan media sosial-->
+        <div class="wrapper">
+
+          <!--Sekolah-->
+          <aside class="aside aside-1" id="samping">  
+            <h4>Sekolah:</h4>
+            <ul>
+              <li>SD Negri 228 Palembang</li>
+              <li>SMP Negri 1 Palembang</li>
+              <li>SMA Negri 1 Palembang</li>
+              <li>Teknik Nuklir Universitas Gadjah Mada</li>
+            </ul>
+          </aside>
+          <!--Akhir class Sekolah-->
+
+          <!--Hobi-->
+          <aside class="aside aside-2" id="samping">
+            <h4>Hobi:</h4>
+            <ul>
+              <li>Memasak</li>
+              <li>Membaca</li>
+              <li>Belajar bahasa pemrograman</li>
+            </ul>
+          </aside>
+          <!--Akhir class hobi-->
+
+          <!--Sosial media-->
+          <div class="tengah">
+            <h4>Sosial Media</h4>
+            <!--icon sosmed diaplikasikan grid bootstrap-->
+            <div>
+              <!--Awal penentuan row-->
+              <div>
+                <a id="sosmed" href="https://www.instagram.com/alkodrimuhfaris/"><span class="fa fa-instagram"></span></a>
+                <a id="sosmed" href="https://id-id.facebook.com/alkodrimuhfaris"><span class="fa fa-facebook"></a>
+                <a id="sosmed" href="https://twitter.com/alkodrimuhfaris"><span class="fa fa-twitter"></a>
+              </div>
+              <!--Akhir penentian row-->
+            </div>
+            <!--Akhir penentuan grid pada icon sosmed-->
+          </div>
+          <!--Akhir class sosial media-->
+
+        </div>
+        <!--Akhir penentuan row sekolah, hobi dan media sosial-->
+      </div>
+      <!--Akhir penetuan container sekolah, hobi dan media sosial-->
+    </div>
+    <!--Akhir class main-->
+
+    <!--garis di bawah class main-->
+    <hr width="300px" align="center">
+
+    <!--awal class footer-->
+    <div class="footer jumbotron">
+      <h4>Pesan*</h4>
+      <hr width="300px" align="center" >
+      <p>E-mail*</p>
+      <input type="text" name="E-mail" placeholder="E-mail" />
+      <p>Pesan</p>
+      <textarea placeholder="Pesan"></textarea>
+      <p>*wajib diisi</p>
+      <input type="submit" id="kirim" value="kirim">
+
+    </div>
+    <!--akhir class footer-->
+  </body>
+</html>
